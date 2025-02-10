@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>payment</title>
+  </head>
+  <body class="p-6 bg-white text-gray-900">
+    <div class="max-w-3xl mx-auto">
+      <!-- Product Section -->
+      <div class="flex flex-col md:flex-row items-center gap-6">
+        <img
+          src="https://azafran.in/cdn/shop/articles/Skin_Care_Blog_File.jpg?v=1673428374"
+          alt="Product Image"
+          class="w-full md:w-1/2 me-[50px]"
+        />
+        <div>
+          <p class="text-gray-600">All Products</p>
+          <h2 class="text-2xl font-bold">Skin Function</h2>
+          <p class="text-sm text-gray-600">
+            Antioxidants, Clean at Sephora, Cruelty-Free, Paraben-free, Silicone
+            Free, Sulfate-free, Vegan, Vitamin C
+          </p>
+          <p class="text-red-600 text-xl font-semibold mt-2">$20.50</p>
+
+          <!-- Quantity and Options -->
+          <div class="mt-4">
+            <label for="quantity" class="block text-sm font-medium"
+              >Quantity</label
+            >
+            <select id="quantity" class="border p-2 w-20 mt-1">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </div>
+
+          <div class="mt-4 space-y-2">
+            <label class="flex items-center space-x-2">
+              <input type="radio" name="option" class="text-blue-500" />
+              <span>ABA</span>
+            </label>
+            <label class="flex items-center space-x-2">
+              <input type="radio" name="option" class="text-blue-500" />
+              <span>AC</span>
+            </label>
+            <label class="flex items-center space-x-2">
+              <input type="radio" name="option" class="text-blue-500" />
+              <span>WING</span>
+            </label>
+          </div>
+
+          <!-- Buttons -->
+          <div class="mt-4 flex gap-4">
+            <button class="bg-gray-200 text-gray-900 px-4 py-2 rounded">
+              Add to Cart
+            </button>
+            <button class="bg-black text-white px-4 py-2 rounded">
+              Buy Now
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Free Shipping Section -->
+      <h3 class="text-center text-xl font-bold mt-8">Free shipping</h3>
+
+      <!-- Form Section -->
+      <form class="mt-4 space-y-4">
+        <input
+          type="text"
+          placeholder="All Products"
+          class="w-full border p-2"
+        />
+        <input type="text" placeholder="Address" class="w-full border p-2" />
+        <div class="flex gap-4">
+          <input type="text" placeholder="PLZ" class="w-1/2 border p-2" />
+          <input type="text" placeholder="City" class="w-1/2 border p-2" />
+        </div>
+        <div class="flex gap-4">
+          <button type="button" class="bg-red-500 text-white px-4 py-2 rounded">
+            Delete
+          </button>
+          <button
+            type="submit"
+            class="bg-blue-500 text-white px-4 py-2 rounded"
+          >
+            Save
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
