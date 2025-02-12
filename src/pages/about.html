@@ -1,17 +1,134 @@
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beauty Salon</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-white text-gray-900">
+    <!-- Navbar -->
+    <nav
+      class="bg-pink-300 p-4 flex justify-between items-center w-[100%] h-[80px]"
+    >
+      <img
+        class="w-[300px] h-[150px]"
+        src="../asset/footerimg.png"
+        alt=""
+      />
+      <div class="text-lg font-bold"></div>
+      <ul class="flex space-x-16 text-white text-lg font-bold">
+        <li><a href="#" class="hover:text-gray-700">Home</a></li>
+        <li><a href="#" class="hover:text-gray-700">About</a></li>
+        <li><a href="#" class="hover:text-gray-700">Gallery</a></li>
+        <li><a href="#" class="hover:text-gray-700">Shop</a></li>
+        <li><a href="#" class="hover:text-gray-700">Blog</a></li>
+        <li><a href="#" class="hover:text-gray-700">FAQ</a></li>
+        <li>
+          <a href="#" class="bg-yellow-500 px-3 py-1 rounded">CONTACT</a>
+        </li>
+      </ul>
+    </nav>
 
-</head>
-<body>
-    <div class="bg-[url(../asset/bg.jpg)] w-full h-screen bg-no-repeat bg-cover">
-        <div class="w-full h-screen bg-[rgba(0,0,0,0.9)] fixed flex items-center justify-center">
-            <div class="text-white text-8xl font-bold">ABOUT US</div>
-          </div>        
+    <!-- Hero Section -->
+    <header class="relative">
+      <div
+        class="bg-[url(../asset/bg.jpg)] w-full h-screen bg-no-repeat bg-cover"
+      ></div>
+      <div
+        class="absolute inset-0 flex justify-center items-center bg-black bg-opacity-30"
+      >
+        <h1 class="text-white text-6xl font-bold">The Power of Nature</h1>
+      </div>
+    </header>
+
+    <h1 class="text-center font-bold text-4xl p-10 ">OUR BARBERS</h1>
+
+    <div class="flex items-center justify-center h-auto mt-10 gap-8 flex-wrap">
+
+        <div class="max-w-sm rounded overflow-hidden shadow-2xl bg-white mb-2" >
+            <img class="w-[200px] h-48 object-cover rounded-full mx-auto" src="../asset/pic-about1.png" alt="Card image">
+            <div class="px-6 py-4 text-center">
+              <h2 class="font-bold text-3xl mb-2">Jean Smith</h2>
+              <p class="text-gray-700 text-2xl">
+                Jean Smith is an experienced hairstylist, specializing in precision haircuts, color treatments, and personalized styling to help clients achieve their desired look.
+              </p>
+            </div>
+            <div class="w-[120px] h-[50px] items-center ml-32 flex items-center justify-center gap-5 -mt-5">
+                <a href="#" class="w-[70px] h-full hover:scale-110 hover:opacity-80 transition-all">
+                    <img src="../asset/icon1.png" alt="" class="w-full h-full object-contain">
+                  </a>
+                  
+                  <a href="#" class="w-[70px] h-full hover:scale-110 hover:opacity-80 transition-all">
+                    <img src="../asset/icon2.png" alt="" class="w-full h-full object-contain">
+                  </a>
+
+                  <a href="#" class="w-[70px] h-full hover:scale-110 hover:opacity-80 transition-all">
+                    <img src="../asset/icon3.png" alt="" class="w-full h-full object-contain">
+                  </a>
+            </div>
+        </div>
+
+        <div class="max-w-sm rounded overflow-hidden shadow-2xl bg-white mb-2">
+            <img class="w-[200px] h-48 object-cover rounded-full mx-auto" src="../asset/pic-about2.png" alt="Card image">
+            <div class="px-6 py-4 text-center">
+              <h2 class="font-bold text-3xl mb-2">John Smith</h2>
+              <p class="text-gray-700 text-2xl">
+                John Smith is a professional hairstylist known for his expertise in haircuts, styling, and color treatments, delivering personalized looks to suit each client's.
+              </p>
+            </div>
+            <div class="w-[120px] h-[50px] items-center ml-32 flex items-center justify-center gap-5 -mt-5">
+                <a href="#" class="w-[70px] h-full hover:scale-110 hover:opacity-80 transition-all">
+                    <img src="../asset/icon1.png" alt="" class="w-full h-full object-contain">
+                  </a>
+                  
+                  <a href="#" class="w-[70px] h-full hover:scale-110 hover:opacity-80 transition-all">
+                    <img src="../asset/icon2.png" alt="" class="w-full h-full object-contain">
+                  </a>
+
+                  <a href="#" class="w-[70px] h-full hover:scale-110 hover:opacity-80 transition-all">
+                    <img src="../asset/icon3.png" alt="" class="w-full h-full object-contain">
+                  </a>
+            </div>
+        </div>
+
+        <div class="max-w-sm rounded overflow-hidden shadow-2xl bg-white mb-2">
+            <img class="w-[200px] h-48 object-cover rounded-full mx-auto" src="../asset/pic about3.png" alt="Card image">
+            <div class="px-6 py-4 text-center">
+              <h2 class="font-bold text-3xl mb-2">Claire Smith</h2>
+              <p class="text-gray-700 text-2xl">
+                Claire Smith is a talented hairstylist specializing in precision cuts, creative styling, and color techniques, offering customized services to enhance her clients'.
+              </p>
+            </div>
+            <div class="w-[120px] h-[50px] items-center ml-32 flex items-center justify-center gap-5 -mt-5">
+                <a href="#" class="w-[70px] h-full hover:scale-110 hover:opacity-80 transition-all">
+                    <img src="../asset/icon1.png" alt="" class="w-full h-full object-contain">
+                  </a>
+                  
+                  <a href="#" class="w-[70px] h-full hover:scale-110 hover:opacity-80 transition-all">
+                    <img src="../asset/icon2.png" alt="" class="w-full h-full object-contain">
+                  </a>
+
+                  <a href="#" class="w-[70px] h-full hover:scale-110 hover:opacity-80 transition-all">
+                    <img src="../asset/icon3.png" alt="" class="w-full h-full object-contain">
+                  </a>
+            </div>
+        </div>
     </div>
-</body>
+
+    <div class="relative w-full h-[500px]">
+      <div class="relative  top-12 left-10 rounded-[20px] w-[600px] shadow-2xl h-[600px] text-white flex items-center justify-center">
+        <img src="../asset/about4.png" alt="">
+      </div>
+  
+      <div class="absolute top-[100px] left-[600px] rounded-[20px] shadow-2xl w-[600px] h-[500px] bg-white">
+        <h1 class="font-bold text-3xl mt-[15px] ml-[40px]">New hairstyle!</h1>
+        <p class="ml-[40px] text-2xl leading-relaxed">A new hairstyle can transform a woman's look, boosting confidence and showcasing individuality. Whether it's a fresh cut, color, or trendy style, it’s a fun way to express personal style. A salon experience offers relaxation, expert care, and an instant confidence boost, leaving you feeling rejuvenated and beautiful. It's not just about the appearance; a change in hairstyle can have a powerful emotional impact, giving you a sense of renewal. Trying a new look can also be a great way to mark a new chapter in life.</p>
+      </div>
+    </div>
+
+    <h1 class="text-center font-bold text-4xl p-10 mt-[160px]">We want your hair to look fabulous</h1>
+    
+  </body>
 </html>
