@@ -3,41 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Tailwind Page</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Responsive Footer</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
-<body class="bg-gray-100 p-4">
-    <div class="max-w-4xl mx-auto space-y-6">
-        <div class="grid md:grid-cols-2 gap-6 bg-white shadow-lg rounded-lg overflow-hidden">
-            <img src="https://via.placeholder.com/400" alt="A Place of Silence" class="w-full h-64 object-cover">
-            <div class="p-6 flex flex-col justify-center">
-                <h2 class="text-2xl font-semibold">A Place of Silence</h2>
-                <p class="text-sm text-gray-500">10 June 2024</p>
-                <p class="mt-2 text-gray-700">Quisque velit nisi, pretium ut lacinia in, elementum id enim. Donec sollicitudin molestie malesuada.</p>
-                <button class="mt-4 bg-red-500 text-white px-4 py-2 rounded">Read More</button>
-            </div>
+<body>
+    <div class="w-[95%] h-[300px] max-w-4xl bg-pink-300 mx-auto rounded-xl flex flex-col items-center justify-center p-6 md:p-10">
+        <div>
+            <img class="mx-auto w-[200px] md:w-[300px] h-[150px] pb-5" src="/src/asset/footerimg.png" alt="Footer Logo">
         </div>
-        
-        <div class="grid md:grid-cols-2 gap-6 bg-white shadow-lg rounded-lg overflow-hidden flex-row-reverse">
-           
-            <div class="p-6 flex flex-col justify-center">
-                <h2 class="text-2xl font-semibold">How to Makeup</h2>
-                <p class="text-sm text-gray-500">10 June 2024</p>
-                <p class="mt-2 text-gray-700">Quisque velit nisi, pretium ut lacinia in, elementum id enim. Donec sollicitudin molestie malesuada.</p>
-                <button class="mt-4 bg-red-500 text-white px-4 py-2 rounded">Read More</button>
+        <div class=" flex flex-wrap justify-center gap-6 text-amber-900 text-3xl md:text-4xl pb-4 -mt-9">
+            <i class="fa-brands fa-square-facebook"></i>
+            <i class="fa-brands fa-square-twitter"></i>
+            <i class="fa-brands fa-square-pinterest"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+        <div class="w-full grid grid-cols-1 md:grid-cols-3 gap-4 text-[#8B5E3C] font-medium text-center">
+            <div>
+                <p class="text-sm">Telephone</p>
+                <p class="font-bold">+(855) 45678975</p>
             </div>
             <div>
-                <img src="https://via.placeholder.com/400" alt="How to Makeup" class="w-full h-64 object-cover">
+                <p class="text-sm">Address</p>
+                <p class="font-bold">Phnom Penh</p>
             </div>
-        </div>
-        
-        <div class="grid md:grid-cols-2 gap-6 bg-white shadow-lg rounded-lg overflow-hidden">
-            <img src="https://via.placeholder.com/400" alt="Principles of Coldness" class="w-full h-64 object-cover">
-            <div class="p-6 flex flex-col justify-center">
-                <h2 class="text-2xl font-semibold">Principles of Coldness</h2>
-                <p class="text-sm text-gray-500">10 June 2024</p>
-                <p class="mt-2 text-gray-700">Quisque velit nisi, pretium ut lacinia in, elementum id enim. Donec sollicitudin molestie malesuada.</p>
-                <button class="mt-4 bg-red-500 text-white px-4 py-2 rounded">Read More</button>
+            <div>
+                <p class="text-sm">Working Hours</p>
+                <p class="font-bold">Mon to Fri - 8:00 to 17:00</p>
             </div>
         </div>
     </div>
