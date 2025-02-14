@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beauty Salon</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <style>
+      .scroll-hidden {
+        opacity: 0;
+        transform: translateY(50px);
+        transition: opacity 0.8s, transform 0.8s;
+      }
+      .scroll-show {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    </style>
+  </head>
+  <body class="bg-white text-gray-900">
+    <!-- Navbar -->
+    <nav
+      class="bg-pink-300 p-4 fixed top-0 w-full flex justify-between items-center shadow-md z-50"
+    >
+      <img class="w-32" src="../asset/footerimg.png" alt="Logo" />
+      <ul class="hidden md:flex space-x-6 text-white font-bold">
+        <li><a href="#" class="hover:text-red-950">Home</a></li>
+        <li><a href="#" class="hover:text-red-950">About</a></li>
+        <li><a href="#" class="hover:text-red-950">Gallery</a></li>
+        <li><a href="#" class="hover:text-red-950">Shop</a></li>
+        <li><a href="#" class="hover:text-red-950">Blog</a></li>
+        <li><a href="#" class="hover:text-red-950">FAQ</a></li>
+        <li>
+          <a href="#" class="bg-stone-900 px-3 py-1 rounded text-yellow-500"
+            >CONTACT</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header
+      class="mt-20 h-[70vh] flex items-center justify-center bg-cover bg-center"
+      style="background-image: url('/src/asset/hero-s About.png')"
+    >
+      <h1
+        class="text-white text-4xl md:text-6xl font-bold bg-black bg-opacity-50 px-8 py-4 rounded"
+      >
+        OUR BLOG
+      </h1>
+    </header>
+
+    <!-- Blog Sections -->
+    <section class="space-y-14 px-6 md:px-16">
+      <div class="flex flex-col md:flex-row gap-6 items-center scroll-hidden">
+        <img
+          class="w-full md:w-1/2 rounded-lg"
+          src="https://www.janets.org.uk/wp-content/uploads/2017/10/Makeup-Artist-Nail-Technician-and-Hairdressing-Course-for-Beauty-Salon.jpg"
+          alt="Beauty Course"
+        />
+        <div class="md:w-1/2">
+          <h2 class="text-3xl font-bold">A Place of Silence</h2>
+          <p class="text-gray-600">10 June 2024</p>
+          <p class="text-gray-700">
+            Relax your mind and body with our silent retreat services...
+          </p>
+          <a
+            href="#"
+            class="mt-4 px-5 py-2 bg-pink-500 text-white font-bold rounded-full hover:bg-pink-600"
+            >Read More</a
+          >
+        </div>
+      </div>
+
+      <div
+        class="flex flex-col-reverse md:flex-row gap-6 items-center scroll-hidden"
+      >
+        <div class="md:w-1/2">
+          <h2 class="text-3xl font-bold">How to Makeup</h2>
+          <p class="text-gray-600">10 June 2024</p>
+          <p class="text-gray-700">
+            Master your makeup skills with expert tips...
+          </p>
+          <a
+            href="#"
+            class="mt-4 px-5 py-2 bg-pink-500 text-white font-bold rounded-full hover:bg-pink-600"
+            >Read More</a
+          >
+        </div>
+        <img
+          class="w-full md:w-1/2 rounded-lg"
+          src="https://media.istockphoto.com/id/981893692/photo/beautiful-woman-face-with-perfect-makeup.jpg"
+          alt="Makeup Tips"
+        />
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-pink-300 mt-12 p-6 text-center">
+      <img class="w-32 mx-auto pb-4" src="../asset/footerimg.png" alt="Logo" />
+      <div class="flex justify-center space-x-6 text-3xl text-amber-900 py-3">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-pinterest"></i>
+        <i class="fa-brands fa-linkedin"></i>
+      </div>
+      <div
+        class="flex flex-wrap justify-center gap-6 text-[#8B5E3C] font-medium"
+      >
+        <div>
+          <p class="text-sm">Telephone</p>
+          <p class="font-bold">+(855) 45678975</p>
+        </div>
+        <div>
+          <p class="text-sm">Address</p>
+          <p class="font-bold">Phnom Penh</p>
+        </div>
+        <div>
+          <p class="text-sm">Working Hours</p>
+          <p class="font-bold">Mon-Fri: 8AM - 5PM</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scroll Animation Script -->
+    <script>
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) entry.target.classList.add("scroll-show");
+          });
+        },
+        { threshold: 0.3 }
+      );
+      document
+        .querySelectorAll(".scroll-hidden")
+        .forEach((el) => observer.observe(el));
+    </script>
+  </body>
+</html>
