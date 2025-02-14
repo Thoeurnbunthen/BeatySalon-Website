@@ -1,0 +1,262 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beauty Salon</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <style>
+      .fade-in {
+        animation: fadeIn 1.5s ease-out;
+      }
+      @keyframes fadeIn {
+        0% { opacity: 0; transform: translateY(50px); }
+        100% { opacity: 1; transform: translateY(0); }
+      }
+
+      .section-fade-in {
+        animation: fadeIn 1.5s ease-out;
+      }
+      
+      .scale-hover:hover {
+        transform: scale(1.05);
+        transition: transform 0.3s ease;
+      }
+
+      @keyframes slideInFromLeft {
+        0% {
+          opacity: 0;
+          transform: translateX(-100%);
+        }
+        100% {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+      .slide-in-left {
+        animation: slideInFromLeft 1s ease-out;
+      }
+
+      @keyframes slideInFromRight {
+        0% {
+          opacity: 0;
+          transform: translateX(100%);
+        }
+        100% {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+      .slide-in-right {
+        animation: slideInFromRight 1s ease-out;
+      }
+
+      .scale-hover:hover {
+        transform: scale(1.1);
+        transition: transform 0.2s ease-in-out;
+      }
+
+      .button-hover:hover {
+        transform: scale(1.05);
+        transition: all 0.3s ease;
+      }
+
+    </style>
+
+  </head>
+  <body class="bg-white text-gray-900">
+
+    <nav class="bg-pink-300 p-4 flex justify-between items-center w-full h-[80px]">
+      <img class="w-[200px] h-[100px] sm:w-[250px] sm:h-[120px]" src="../BeatySalon-Website/src/asset/footerimg.png" alt="Logo">
+      
+      <div class="hidden md:flex items-center space-x-8 text-white text-lg font-bold">
+        <ul class="flex space-x-8">
+          <li><a href="#" class="hover:text-gray-700">Home</a></li>
+          <li><a href="#" class="hover:text-gray-700">About</a></li>
+          <li><a href="#" class="hover:text-gray-700">Gallery</a></li>
+          <li><a href="#" class="hover:text-gray-700">Shop</a></li>
+          <li><a href="#" class="hover:text-gray-700">Blog</a></li>
+          <li><a href="#" class="hover:text-gray-700">FAQ</a></li>
+          <li>
+            <a href="#" class="bg-yellow-500 px-3 py-1 rounded">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="md:hidden flex items-center space-x-4">
+        <button id="menu-toggle" class="text-white text-2xl">
+          <i class="fas fa-bars"></i> 
+        </button>
+      </div>
+    </nav>
+
+    <div id="mobile-menu" class="md:hidden hidden absolute top-[80px] left-0 w-full bg-pink-300 text-center z-50">
+      <ul class="space-y-6 py-4">
+        <li><a href="#" class="block text-white text-lg">Home</a></li>
+        <li><a href="#" class="block text-white text-lg">About</a></li>
+        <li><a href="#" class="block text-white text-lg">Gallery</a></li>
+        <li><a href="#" class="block text-white text-lg">Shop</a></li>
+        <li><a href="#" class="block text-white text-lg">Blog</a></li>
+        <li><a href="#" class="block text-white text-lg">FAQ</a></li>
+        <li>
+          <a href="" class="ms-10 px-4 py-2 bg-yellow-500 text-white font-bold rounded-xl shadow-md hover:text-black">
+            CONTACT
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <script>
+      document.getElementById("menu-toggle").addEventListener("click", function() {
+        let menu = document.getElementById("mobile-menu");
+        menu.classList.toggle("hidden");  
+      });
+    </script>
+
+    <header class="relative section-fade-in">
+      <div class="bg-[url(../BeatySalon-Website/src/asset/bghome.png)] w-full h-[50vh] sm:h-screen bg-no-repeat bg-cover bg-center">
+      </div>
+      <div class="absolute inset-0 p-10 pt-20 bg-black bg-opacity-30">
+        <h1 class="text-white text-3xl sm:text-6xl font-bold text-fade-in">The Power of <br> Nature</h1>
+      </div>
+    </header>
+
+    <h1 class="text-center font-bold text-4xl p-10 fade-in">We want your hair to look fabulous</h1>
+
+    <div class="w-full h-auto flex justify-center flex-wrap gap-[20px]">
+      <div class="relative w-[400px] h-auto sm:h-[500px] fade-in items-center flex justify-evenly flex-wrap gap-[20px]">
+        <img src="../BeatySalon-Website//src/asset/homeimg1.png" alt="Card Image" class="w-[400px] h-[450px] object-cover">
+        <div class="absolute bottom-[10px] left-1/2 transform -translate-x-1/2 bg-pink-500 text-white px-4 py-2 rounded-lg hover:bg-pink-700 transition duration-300">
+          <a href="">MAKE-UP</a>
+        </div>
+      </div>
+
+      <div class="relative w-[400px] h-auto sm:h-[500px] fade-in items-center flex justify-evenly flex-wrap gap-[20px]">
+        <img src="../BeatySalon-Website//src/asset/homeimg2.png" alt="Card Image" class="w-[400px] h-[450px] object-cover">
+        <div class="absolute bottom-[10px] left-1/2 transform -translate-x-1/2 bg-pink-500 text-white px-4 py-2 rounded-lg hover:bg-pink-700 transition duration-300">
+          <a href="">SKINCARE</a>
+        </div>
+      </div>
+
+      <div class="relative w-[400px] h-auto sm:h-[500px] fade-in items-center flex justify-evenly flex-wrap gap-[20px]">
+        <img src="../BeatySalon-Website//src/asset/homeimg3.png" alt="Card Image" class="w-[400px] h-[450px] object-cover">
+        <div class="absolute bottom-[10px] left-1/2 transform -translate-x-1/2 bg-pink-500 text-white px-4 py-2 rounded-lg hover:bg-pink-700 transition duration-300">
+          <a href="">HAIR</a>
+        </div>
+      </div>
+    </div>
+
+    <h1 class="text-center font-bold text-4xl p-10 fade-in">FEATURED SERVICED</h1>
+
+    <div class="w-full h-auto sm:h-[500px] fade-in items-center flex justify-evenly flex-wrap gap-5 mb-6">
+
+      <div class="max-w-sm rounded overflow-hidden shadow-2xl bg-white mb-10 scale-hover">
+        <img class="w-full h-48 object-cover rounded-t-lg" src="../BeatySalon-Website/src/asset/homeimg4.png" alt="Card image">
+        <div class="px-6 py-4 text-center">
+          <h2 class="font-bold text-4xl mb-2">Barber Razor</h2>
+          <p class="text-gray-700 text-2xl">
+            A barber razor is a straight razor used by barbers for close shaves and grooming. It has a long, sharp blade that folds into its handle for safety.
+          </p>
+        </div>
+        <div class="px-6 py-4">
+          <div class="flex justify-center items-center px-6 py-4">
+            <a href="" class="bg-pink-500 text-white font-bold px-4 py-2 rounded-full hover:bg-blue-300 transition duration-200">
+              29.00$
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="max-w-sm rounded overflow-hidden shadow-2xl bg-white mb-10 scale-hover">
+        <img class="w-full h-48 object-cover rounded-t-lg" src="../BeatySalon-Website/src/asset/homeimg5.png" alt="Card image">
+        <div class="px-6 py-4 text-center">
+          <h2 class="font-bold text-4xl mb-2">Nail Gel</h2>
+          <p class="text-gray-700 text-2xl">
+            Nail art is a creative activity that draws pictures or designs fingernails. These days fingernails and toenails are seen by some.
+          </p>
+        </div>
+        <div class="px-6 py-4">
+          <div class="flex justify-center items-center px-6 py-4">
+            <a href="" class="bg-pink-500 text-white font-bold px-4 py-2 rounded-full hover:bg-blue-300 transition duration-200">
+              49.00$
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="max-w-sm rounded overflow-hidden shadow-2xl bg-white mb-10 scale-hover">
+        <img class="w-full h-48 object-cover rounded-t-lg" src="../BeatySalon-Website/src/asset/homeimg6.png" alt="Card image">
+        <div class="px-6 py-4 text-center">
+          <h2 class="font-bold text-4xl mb-2">Barber Shave</h2>
+          <p class="text-gray-700 text-2xl">
+            Focussed on traditional wet shave techniques, correct equipment, product application and the correct steps of a hot shave process.
+          </p>
+        </div>
+        <div class="px-6 py-4">
+          <div class="flex justify-center items-center px-6 py-4">
+            <a href="" class="bg-pink-500 text-white font-bold px-4 py-2 rounded-full hover:bg-blue-300 transition duration-200">
+              29.00$
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+     <div class="relative w-full h-auto sm:h-[500px] fade-in mt-12">
+      <div class="relative top-12 left-10 rounded-[20px] w-[90%] sm:w-[600px] sm:h-[600px] h-auto shadow-2xl text-white flex items-center justify-center">
+        <img src="../BeatySalon-Website/src/asset/homeimg7.png" alt="New Hairstyle" class="w-full h-auto rounded-[20px] object-cover">
+      </div>
+    
+      <div class="absolute top-[100px] sm:top-[100px] left-0 sm:left-[600px] sm:w-[600px] w-full sm:h-[500px] h-auto bg-white p-6 sm:p-8 rounded-[20px] shadow-2xl mt-12 sm:mt-0">
+        <h1 class="font-bold text-3xl sm:text-4xl ml-[10px] sm:ml-[40px] text-center sm:text-left">New Hairstyle!</h1>
+        <p class="ml-[10px] sm:ml-[40px] text-lg sm:text-2xl leading-relaxed mt-4 text-center sm:text-left">
+          A new hairstyle can be a transformative experience, offering more than just a change in appearance. Whether it's a fresh cut, a bold color, or a trendy style, it provides a way to express individuality and creativity. A trip to the salon not only refreshes one's look but also offers a moment of relaxation and self-care, with expert stylists guiding the transformation. This can lead to a significant confidence boost, leaving you feeling rejuvenated and empowered, ready to take on the world with a renewed sense of self.
+        </p>
+      </div>
+    </div>
+    
+
+    <div class="w-[95%] sm:h-[400px] bg-pink-300 mx-auto rounded-xl flex flex-col items-center justify-center sm:mb-6 mt-[200px]">
+      <div class="mb-6">
+        <img class="mx-auto w-[300px] h-[150px]" src="../BeatySalon-Website/src/asset/footerimg.png" alt="Logo">
+      </div>
+    
+      <div class="h-[150px] flex justify-center items-center ">
+        <div class="text-amber-900 flex flex-row justify-center space-x-6">
+          <a href="" class="hover:scale-110 hover:opacity-80 transition-all">
+            <i class="fa-brands fa-square-facebook text-4xl"></i>
+          </a>
+          <a href="" class="hover:scale-110 hover:opacity-80 transition-all">
+            <i class="fa-brands fa-square-twitter text-4xl"></i>
+          </a>
+          <a href="" class="hover:scale-110 hover:opacity-80 transition-all">
+            <i class="fa-brands fa-square-pinterest text-4xl"></i>
+          </a>
+          <a href="" class="hover:scale-110 hover:opacity-80 transition-all">
+            <i class="fa-brands fa-linkedin text-4xl"></i>
+          </a> 
+        </div>
+      </div>
+    
+      <div class="w-full grid grid-cols-1 sm:grid-cols-3 text-[#8B5E3C] font-medium gap-4 sm:gap-8 text-center sm:text-left ">
+        <div class="flex flex-col items-center">
+          <p class="text-sm">Telephone</p>
+          <p class="font-bold">+(855) 45678975</p>
+        </div>
+        <div class="flex flex-col items-center">
+          <p class="text-sm">Address</p>
+          <p class="font-bold">Phnom Penh</p>
+        </div>
+        <div class="flex flex-col items-center">
+          <p class="text-sm">Working Hours</p>
+          <p class="font-bold">Mon to Fri - 8:00 to 17:00</p>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
