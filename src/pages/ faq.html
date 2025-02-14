@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Beauty Salon</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body class="bg-white text-gray-900 w-[100%] h-[100%]">
+  <!-- Navbar -->
+  <nav class="bg-pink-300 p-4 flex justify-between items-center w-[100%] h-[80px]">
+    <img class="w-[300px] h-[150px]" src="../asset/footerimg.png" alt="" />
+    <div class="text-lg font-bold"></div>
+    <ul class="flex space-x-16 text-white text-lg font-bold">
+      <li><a href="#" class="hover:text-orange-800">Home</a></li>
+      <li><a href="#" class="hover:text-orange-800">About</a></li>
+      <li><a href="#" class="hover:text-orange-800">Gallery</a></li>
+      <li><a href="#" class="hover:text-orange-800">Shop</a></li>
+      <li><a href="#" class="hover:text-orange-800">Blog</a></li>
+      <li><a href="#" class="hover:text-orange-800">FAQ</a></li>
+      <li> <a href="#" class="bg-stone-900 px-3 py-1 rounded text-yellow-500">CONTACT</a></li>
+    </ul>
+  </nav>
+  <h1 class="text-4xl text-center p-6 mt-6">Do you have any questions? Ask us</h1>
+  <p class="text-center text-2xl">Please read questions bellow and if you can not find your answer, please send us <br> your question, we will answer you as soon as possible. We depend on volunteers <br>from our local community, joining us you can both gain experience and help others.</p>
+  <div class="max-w-2xl mx-auto bg-white p-6 rounded-lg shadow-lg mt-6">
+    <h2 class="text-2xl font-bold mb-4 text-gray-800">Frequently Asked Questions</h2>
+    <div class="space-y-4">
+        <div>
+            <button class="w-full flex justify-between items-center text-left text-lg font-semibold text-gray-700 focus:outline-none" onclick="toggleAnswer('answer1', 'icon1')">
+              Your Question Title?
+                <span id="icon1" class="transform transition-transform">▼</span>
+            </button>
+            <p id="answer1" class="text-gray-600 mt-1 hidden">I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+        </div>
+        <div>
+          <button class="w-full flex justify-between items-center text-left text-lg font-semibold text-gray-700 focus:outline-none" onclick="toggleAnswer('answer2', 'icon2')">
+            Do eiusmod tempor incidit?
+              <span id="icon2" class="transform transition-transform">▼</span>
+          </button>
+          <p id="answer2" class="text-gray-600 mt-1 hidden">I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+      </div>
+      <div>
+        <button class="w-full flex justify-between items-center text-left text-lg font-semibold text-gray-700 focus:outline-none" onclick="toggleAnswer('answer3', 'icon3')">
+          Cupidatat iusmod tempor incid idun?
+            <span id="icon3" class="transform transition-transform">▼</span>
+        </button>
+        <p id="answer3" class="text-gray-600 mt-1 hidden">I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+    </div>
+    <div>
+      <button class="w-full flex justify-between items-center text-left text-lg font-semibold text-gray-700 focus:outline-none" onclick="toggleAnswer('answer4', 'icon4')">
+        Excepteur sint occaecat cupidatat iusmod tempor idun?
+          <span id="icon4" class="transform transition-transform">▼</span>
+      </button>
+      <p id="answer4" class="text-gray-600 mt-1 hidden">I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+  </div>
+  <div>
+    <button class="w-full flex justify-between items-center text-left text-lg font-semibold text-gray-700 focus:outline-none" onclick="toggleAnswer('answer5', 'icon5')">
+      Cupidatat iusmod tempor incid idun?
+        <span id="icon5" class="transform transition-transform">▼</span>
+    </button>
+    <p id="answer5" class="text-gray-600 mt-1 hidden">I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+</div>
+     
+    </div> 
+  </div>
+</div>
+<script>
+    function toggleAnswer(answerId, iconId) {
+        var answer = document.getElementById(answerId);
+        var icon = document.getElementById(iconId);
+        answer.classList.toggle('hidden');
+        icon.classList.toggle('rotate-180');
+    }
+    
+</script>
+<div class="w-[95%] h-[300px] bg-pink-300 mx-auto rounded-xl mb-6 flex flex-col items-center justify-center mt-8">
+  <div class="">
+   <div>
+      <img class="mx-auto w-[300px] h-[150px] pb-5" src="../asset/footerimg.png" alt="">
+   </div>
+  
+  </div>
+  <div class="h-[150px]  ">
+      <div class="text-amber-900 flex flex-row justify-center space-x-6 -mt-9">
+          <i class="fa-brands fa-square-facebook text-4xl"></i>
+          <i class="fa-brands fa-square-twitter text-4xl"></i>
+          <i class="fa-brands fa-square-pinterest text-4xl"></i>
+          <i class="fa-brands fa-linkedin text-4xl"></i>
+       </div>
+  </div>
+  <div class="w-full grid grid-cols-3 text-[#8B5E3C] font-medium pb-6 ">
+      <div class="ms-10">
+          <p class="text-sm ms-7">Telephone</p>
+          <p class="font-bold">+(855) 45678975</p>
+      </div>
+      <div class="ms-40">
+          <p class="text-sm ms-5">Address</p>
+          <p class="font-bold">Phnom Penh</p>
+      </div>
+      <div class="ms-40">
+          <p class="text-sm ms-7">Working Hours</p>
+          <p class="font-bold ">Mon to Fri - 8:00 to 17:00</p>
+      </div>
+  </div>
+</div>
+</div>
+
+</body>
+</html>
