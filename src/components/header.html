@@ -1,3 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Navbar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-white text-gray-900">
+    <!-- Navbar -->
+    <nav
+      class="bg-pink-300 p-4 flex justify-between items-center w-full h-[80px]"
+    >
+      <img class="w-[150px] h-[80px]" src="../asset/footerimg.png" alt="Logo" />
 
 <!DOCTYPE html>
 <html lang="en">
@@ -38,10 +52,16 @@
       <div
         class="absolute inset-0 flex justify-center items-center bg-black bg-opacity-30"
       >
-      <img src="" alt="">
         <h1 class="text-white text-4xl font-bold">The Power of Nature</h1>
       </div>
     </header>
+    <script>
+      document
+        .getElementById("menu-button")
+        .addEventListener("click", function () {
+          document.getElementById("menu").classList.toggle("hidden");
+        });
+    </script>
   </body>
 </html>
 </body>
