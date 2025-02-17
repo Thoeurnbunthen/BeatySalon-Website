@@ -3,153 +3,222 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-    />
-    <title>payment</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <title>Document</title>
   </head>
-  <body class="">
-    
-    <nav
-      class="bg-pink-300 p-4 flex justify-between items-center w-[100%] h-[80px]"
+  <body>
+    <!-- Table Header -->
+    <div
+      class="hidden sm:flex justify-center gap-16 mt-10 text-lg font-semibold"
     >
-      <img
-        class="w-[300px] h-[150px]"
-        src="/src/ assets/images/footerimg-removebg-preview (1).png"
-        alt=""
-      />
-      <div class="text-lg font-bold"></div>
-      <ul class="flex space-x-16 text-white text-lg font-bold">
-        <li><a href="#" class="hover:text-gray-700">Home</a></li>
-        <li><a href="#" class="hover:text-gray-700">About</a></li>
-        <li><a href="#" class="hover:text-gray-700">Gallery</a></li>
-        <li><a href="shop.html" class="hover:text-gray-700">Shop</a></li>
-        <li><a href="#" class="hover:text-gray-700">Blog</a></li>
-        <li><a href="#" class="hover:text-gray-700">FAQ</a></li>
-        <li>
-          <a href="contact.html" class="bg-yellow-500 px-3 py-1 rounded">CONTACT</a>
-        </li>
-      </ul>
-    </nav>
-
-    <div class="max-w-3xl mx-auto mt-[50px]">
-      <!-- Product Section -->
-      <div class="flex flex-col md:flex-row items-center gap-6 ">
-        <img
-          src="https://azafran.in/cdn/shop/articles/Skin_Care_Blog_File.jpg?v=1673428374"
-          alt="Product Image"
-          class="w-full md:w-1/2 me-[50px]bg-white p-4 rounded-lg shadow-lg transform transition duration-300 hover:scale-105"
-        />
-        <div>
-          <p class="text-gray-600">All Products</p>
-          <h2 class="text-2xl font-bold">Skin Function</h2>
-          <p class="text-sm text-gray-600">
-            Antioxidants, Clean at Sephora, Cruelty-Free, Paraben-free, Silicone
-            Free, Sulfate-free, Vegan, Vitamin C
-          </p>
-          <p class="text-red-600 text-xl font-semibold mt-2">$20.50</p>
-
-          <!-- Quantity and Options -->
-          <div class="mt-4">
-            <label for="quantity" class="block text-sm font-medium"
-              >Quantity</label
-            >
-            <select id="quantity" class="border p-2 w-20 mt-1">
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
-            </select>
-          </div>
-
-          <div class="mt-4 space-y-2">
-            <label class="flex items-center space-x-2">
-              <input type="radio" name="option" class="text-blue-500" />
-              <span>ABA</span>
-            </label>
-            <label class="flex items-center space-x-2">
-              <input type="radio" name="option" class="text-blue-500" />
-              <span>AC</span>
-            </label>
-            <label class="flex items-center space-x-2">
-              <input type="radio" name="option" class="text-blue-500" />
-              <span>WING</span>
-            </label>
-          </div>
-
-          <!-- Buttons -->
-          <div class="mt-4 flex gap-4">
-            <button class="bg-gray-200 text-gray-900 px-4 py-2 rounded">
-              <a href="shop.html">Add to Cart</a>
-            </button>
-            <button class="bg-black text-white px-4 py-2 rounded">
-              Buy Now
-            </button>
-          </div>
-        </div>
-      </div>
-
-      <!-- Free Shipping Section -->
-      <h3 class="text-center text-xl font-bold mt-8">Free shipping</h3>
-
-      <!-- Form Section -->
-      <form class="mt-4 space-y-4">
-        <input
-          type="text"
-          placeholder="All Products"
-          class="w-full border p-2"
-        />
-        <input type="text" placeholder="Address" class="w-full border p-2" />
-        <div class="flex gap-4">
-          <input type="text" placeholder="PLZ" class="w-1/2 border p-2" />
-          <input type="text" placeholder="City" class="w-1/2 border p-2" />
-        </div>
-        <div class="flex gap-4">
-          <button type="button" class="bg-red-500 text-white px-4 py-2 rounded">
-            Delete
-          </button>
-          <button
-            type="submit"
-            class="bg-blue-500 text-white px-4 py-2 rounded"
-          >
-            Save
-          </button>
-        </div>
-      </form>
+      <h1>Item</h1>
+      <h1>Price</h1>
+      <h1>Quantity</h1>
+      <h1>Total</h1>
     </div>
-    <div class="w-[95%] h-[400px] bg-pink-300 mx-auto rounded-xl flex flex-col items-center justify-center mt-[50px] ">
-      <div class="">
-       <div>
-          <img class="mx-auto w-[300px] h-[150px] " src="/src/ assets/images/footerimg-removebg-preview (1).png" alt="">
-       </div>
-      
-      </div>
-      <div class="h-[150px]">
-          <div class="text-amber-900 flex flex-row justify-center space-x-6 ">
-              <i class="fa-brands fa-square-facebook text-4xl"></i>
-              <i class="fa-brands fa-square-twitter text-4xl"></i>
-              <i class="fa-brands fa-square-pinterest text-4xl"></i>
-              <i class="fa-brands fa-linkedin text-4xl"></i>
-           </div>
-      </div>
-      <div class="w-full grid grid-cols-3 text-[#8B5E3C] font-medium ">
-          <div class="ms-20">
-              <p class="text-sm ms-7">Telephone</p>
-              <p class="font-bold">+(855) 45678975</p>
+
+    <!-- Cart Items -->
+    <div class="space-y-5 p-5 sm:p-10">
+      <!-- Item 1 -->
+      <div
+        class="bg-gray-300 flex flex-col sm:flex-row items-center justify-between p-4 rounded-lg"
+      >
+        <div class="flex items-center gap-4">
+          <img
+            src="../asset/1-removebg-preview.png"
+            class="w-20 h-20 object-cover"
+            alt="Bed"
+          />
+          <div>
+            <h1 class="font-bold">glo Skincare</h1>
+            <p class="text-sm sm:text-base">
+              Wood Castle Reflections Storage Bed
+            </p>
+            <p class="font-semibold">$200.00</p>
           </div>
-          <div class="ms-40">
-              <p class="text-sm ms-5">Address</p>
-              <p class="font-bold">Phnom Penh</p>
-          </div>
-          <div class="ms-40">
-              <p class="text-sm ms-7">Working Hours</p>
-              <p class="font-bold">Mon to Fri - 8:00 to 17:00</p>
-          </div>
+        </div>
+        <h1 class="hidden sm:block">$2,999.00</h1>
+        <div class="flex items-center gap-2 bg-white p-2 rounded-lg">
+          <button class="px-3 py-1 text-xl" onclick="decreaseValue()">-</button>
+          <input
+            id="quantity1"
+            type="number"
+            value="1"
+            min="1"
+            class="w-12 text-center border rounded-md"
+          />
+          <button class="px-3 py-1 text-xl" onclick="increaseValue()">+</button>
+        </div>
+        <h1>$2,999.00</h1>
       </div>
-  </div>
-  </div>
+
+      <!-- Item 2 -->
+      <div
+        class="bg-gray-300 flex flex-col sm:flex-row items-center justify-between p-4 rounded-lg"
+      >
+        <div class="flex items-center gap-4">
+          <img
+            src="../asset/2-removebg-preview.png"
+            class="w-20 h-20 object-cover"
+            alt="Rug"
+          />
+          <div>
+            <h1 class="font-bold">Green Tea Skin Care</h1>
+            <p class="text-sm sm:text-base">Round rugs - Ronda (Beige)</p>
+            <p class="font-semibold">$132.99</p>
+          </div>
+        </div>
+        <h1 class="hidden ml-18 sm:block">$132.99</h1>
+        <div class="flex items-center gap-2 bg-white p-2 rounded-lg">
+          <button class="px-3 py-1 text-xl" onclick="decreaseValue()">-</button>
+          <input
+            id="quantity2"
+            type="number"
+            value="1"
+            min="1"
+            class="w-12 text-center border rounded-md"
+          />
+          <button class="px-3 py-1 text-xl" onclick="increaseValue()">+</button>
+        </div>
+        <h1>$132.99</h1>
+      </div>
+
+      <!-- Item 3 -->
+      <div
+        class="bg-gray-300 flex flex-col sm:flex-row items-center justify-between p-4 rounded-lg"
+      >
+        <div class="flex items-center gap-4">
+          <img
+            src="../asset/3-removebg-preview.png"
+            class="w-20 h-20 object-cover"
+            alt="Sofa"
+          />
+          <div>
+            <h1 class="font-bold">Korean Beauty</h1>
+            <p class="text-sm sm:text-base">Meribel 3 Seater</p>
+            <p class="font-semibold">$130.00</p>
+          </div>
+        </div>
+        <h1 class="hidden ml-41 sm:block">$1,099.00</h1>
+        <div class="flex items-center gap-2 bg-white p-2 rounded-lg">
+          <button class="px-3 py-1 text-xl" onclick="decreaseValue()">-</button>
+          <input
+            id="quantity3"
+            type="number"
+            value="1"
+            min="1"
+            class="w-12 text-center border rounded-md"
+          />
+          <button class="px-3 py-1 text-xl" onclick="increaseValue()">+</button>
+        </div>
+        <h1>$1,099.00</h1>
+      </div>
+
+      <div
+        class="bg-gray-300 flex flex-col sm:flex-row items-center justify-between p-4 rounded-lg"
+      >
+        <h1 class="text-[20px] font-bold">Total</h1>
+        <h1 class="text-[20px] font-bold text-green-800">$4,230.99</h1>
+      </div>
+    </div>
+    <!-- Payment Methods -->
+    <h1 class="font-semibold ml-5 sm:ml-15 mt-2 text-2xl">Pay by banks</h1>
+    <div class="payment">
+      <label
+        for=""
+        class="flex mt-5 bg-gray-900 has-checked:bg-indigo-50 has-checked:text-indigo-900 has-checked:ring-indigo-200 dark:has-checked:bg-indigo-950 dark:has-checked:text-indigo-200 dark:has-checked:ring-indigo-900 w-90 h-15 rounded-lg ml-10"
+      >
+        <a href="#" class="relative group ml-5">
+          <img
+            class="w-10 rounded-full mt-2.5"
+            src="https://cdn6.aptoide.com/imgs/2/a/6/2a6b391e2053870eac06539bd99d51a6_icon.png"
+            alt="ABA"
+          />
+          <span
+            class="absolute left-0 bottom-0 w-0 h-0.5 bg-yellow-500 transition-all duration-300 group-hover:w-78"
+          ></span>
+        </a>
+        <h1 class="mt-5 ml-5 text-white">ABA</h1>
+        <input
+          type="radio"
+          class="mr-2 w-5 h-5 ml-50 mt-5 checked:border-indigo-500"
+        />
+      </label>
+      <label
+        for=""
+        class="flex mt-5 bg-gray-900 has-checked:bg-indigo-50 has-checked:text-indigo-900 has-checked:ring-indigo-200 dark:has-checked:bg-indigo-950 dark:has-checked:text-indigo-200 dark:has-checked:ring-indigo-900 w-90 h-15 rounded-lg ml-10"
+      >
+        <a href="#" class="relative group ml-5">
+          <img
+            class="w-10 rounded-full mt-2.5"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRc77htM5tOr7nnT3yPRSRYSf8IhH0YZZKHZA&s"
+            alt="ABA"
+          />
+          <span
+            class="absolute left-0 bottom-0 w-0 h-0.5 bg-yellow-500 transition-all duration-300 group-hover:w-78"
+          ></span>
+        </a>
+        <h1 class="mt-5 ml-5 text-white">Acleda</h1>
+        <input
+          type="radio"
+          class="mr-2 w-5 h-5 ml-46 mt-5 checked:border-indigo-500"
+        />
+      </label>
+      <label
+        for=""
+        class="flex mt-5 bg-gray-900 has-checked:bg-indigo-50 has-checked:text-indigo-900 has-checked:ring-indigo-200 dark:has-checked:bg-indigo-950 dark:has-checked:text-indigo-200 dark:has-checked:ring-indigo-900 w-90 h-15 rounded-lg ml-10"
+      >
+        <a href="#" class="relative group ml-5">
+          <img
+            class="w-10 rounded-full mt-2.5"
+            src="https://play-lh.googleusercontent.com/-deHHbwBUh2I4dzTjq9n4ggBGPqJwKzj9pwvPqyaR-hPxzKN9QVJOBsZP_ShlCDmX60"
+            alt="ABA"
+          />
+          <span
+            class="absolute left-0 bottom-0 w-0 h-0.5 bg-yellow-500 transition-all duration-300 group-hover:w-78"
+          ></span>
+        </a>
+        <h1 class="mt-5 ml-5 text-white">Wings</h1>
+        <input
+          type="radio"
+          class="mr-2 w-5 h-5 ml-47 mt-5 checked:border-indigo-500"
+        />
+      </label>
+    </div>
+
+    <!-- Buy Now Button -->
+    <button
+      class="flex items-center justify-center bg-gray-950 hover:bg-[#001439] text-white mt-10 mx-auto w-64 h-14 rounded-lg drop-shadow-lg"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="w-6 h-6"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        stroke-width="2"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13l-1.4 2.8a1 1 0 00.9 1.4h12.2m-12.2 0a1 1 0 100 2m12.2-2a1 1 0 100 2"
+        />
+      </svg>
+      <span class="ml-3 text-xl font-semibold">Buy Now</span>
+    </button>
+
+    <script>
+      function increaseValue() {
+        let input = event.target.previousElementSibling;
+        input.value = parseInt(input.value) + 1;
+      }
+
+      function decreaseValue() {
+        let input = event.target.nextElementSibling;
+        if (parseInt(input.value) > 1) {
+          input.value = parseInt(input.value) - 1;
+        }
+      }
+    </script>
   </body>
 </html>
