@@ -15,38 +15,89 @@
       class="bg-pink-300 p-4 flex justify-between items-center w-full h-[80px]"
     >
       <img
-        class="w-[150px] h-[80px]"
-        src="../ assets/images/footerimg-removebg-preview (1).png"
+        class="w-[200px] h-[100px] md:w-[250px] md:h-[120px]"
+        src="..//asset/img/footerimg-removebg-preview (1).png"
         alt="Logo"
       />
 
-      <!-- Hamburger Button -->
-      <button id="menu-button" class="md:hidden text-white text-3xl">☰</button>
-
-      <!-- Mobile Menu -->
-      <ul
-        id="menu"
-        class="hidden items-center flex-col absolute top-[80px] left-0 w-full bg-pink-300 text-white text-lg font-bold text-end md:flex md:flex-row md:space-x-8 md:static md:w-auto md:bg-transparent"
+      <div
+        class="hidden md:flex items-center space-x-8 text-white text-lg font-bold"
       >
+        <ul class="flex space-x-8">
+          <li>
+            <a href="../../index.html" class="hover:text-gray-700">Home</a>
+          </li>
+          <li>
+            <a href="about.html" class="hover:text-gray-700">About</a>
+          </li>
+          <li>
+            <a href="gallery.html" class="hover:text-gray-700">Gallery</a>
+          </li>
+          <li>
+            <a href="shop.html" class="hover:text-gray-700">Shop</a>
+          </li>
+          <li>
+            <a href="Blog.html" class="hover:text-gray-700">Blog</a>
+          </li>
+          <li>
+            <a href="faq.html" class="hover:text-gray-700">FAQ</a>
+          </li>
+          <li>
+            <a href="contact.html" class="bg-yellow-500 px-3 py-1 rounded"
+              >CONTACT</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <div class="md:hidden flex items-center space-x-4">
+        <button id="menu-toggle" class="text-white text-2xl">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+
+    <div
+      id="mobile-menu"
+      class="md:hidden hidden absolute top-[80px] left-0 w-full bg-pink-300 px-10 z-50"
+    >
+      <ul class="space-y-6 py-4">
         <li>
-          <a href="src/page" class="hover:text-gray-700 block p-3">Home</a>
+          <a href="../../index.html" class="block text-white text-lg">Home</a>
         </li>
-        <li><a href="#" class="hover:text-gray-700 block p-3">About</a></li>
-        <li><a href="#" class="hover:text-gray-700 block p-3">Gallery</a></li>
-        <li><a href="#" class="hover:text-gray-700 block p-3">Shop</a></li>
-        <li><a href="#" class="hover:text-gray-700 block p-3">Blog</a></li>
-        <li><a href="#" class="hover:text-gray-700 block p-3">FAQ</a></li>
+        <li>
+          <a href="about.html" class="block text-white text-lg">About</a>
+        </li>
+        <li>
+          <a href="gallery.html" class="block text-white text-lg">Gallery</a>
+        </li>
+        <li>
+          <a href="shop.html" class="block text-white text-lg">Shop</a>
+        </li>
+        <li>
+          <a href="Blog.html" class="block text-white text-lg">Blog</a>
+        </li>
+        <li>
+          <a href="faq.html" class="block text-white text-lg">FAQ</a>
+        </li>
         <li>
           <a
-            href="#"
-            class="px-4 py-2 bg-yellow-500 text-white font-bold rounded-xl shadow-md hover:text-black block m-3"
+            href="contact.html"
+            class="-ms-2 px-4 py-2 bg-yellow-500 text-white font-bold rounded-xl shadow-md hover:text-black"
           >
             CONTACT
           </a>
         </li>
       </ul>
-    </nav>
-
+    </div>
+    <script>
+      document
+        .getElementById("menu-toggle")
+        .addEventListener("click", function () {
+          let menu = document.getElementById("mobile-menu");
+          menu.classList.toggle("hidden");
+        });
+    </script>
     <div class="relative w-full glide-01">
       <!-- Slides -->
       <div class="overflow-hidden h-1/2 lg:h-screen" data-glide-el="track">
@@ -281,37 +332,41 @@
       </div>
     </div>
     <div
-      class="w-[95%] h-[400px] bg-pink-300 mx-auto rounded-xl flex flex-col items-center justify-center mt-[50px]"
+      class="w-[95%] h-[300px] bg-pink-300 mx-auto rounded-xl flex flex-col items-center justify-center"
     >
       <div class="">
         <div>
           <img
-            class="mx-auto w-[300px] h-[150px]"
-            src="/src/ assets/images/footerimg-removebg-preview (1).png"
+            class="mx-auto md:w-[300px] w-[300px] h-[150px] pb-5"
+            src="../asset/footerimg.png"
             alt=""
           />
         </div>
       </div>
       <div class="h-[150px]">
-        <div class="text-amber-900 flex flex-row justify-center space-x-6">
+        <div
+          class="text-amber-900 flex flex-row justify-center space-x-6 -mt-9 md:text-4xl text-3xl"
+        >
           <i class="fa-brands fa-square-facebook text-4xl"></i>
           <i class="fa-brands fa-square-twitter text-4xl"></i>
           <i class="fa-brands fa-square-pinterest text-4xl"></i>
           <i class="fa-brands fa-linkedin text-4xl"></i>
         </div>
       </div>
-      <div class="w-full grid grid-cols-3 text-[#8B5E3C] font-medium">
-        <div class="ms-20">
-          <p class="text-sm ms-7">Telephone</p>
-          <p class="font-bold">+(855) 45678975</p>
+      <div
+        class="w-full grid grid-cols-1 md:text-center text-center md:grid-cols-3 text-[#8B5E3C] font-medium pb-5"
+      >
+        <div>
+          <p class="text-sm md:ps-35">Telephone</p>
+          <p class="md:ps-13 font-bold text-lg">+(855) 45678975</p>
         </div>
-        <div class="ms-40">
-          <p class="text-sm ms-5">Address</p>
-          <p class="font-bold">Phnom Penh</p>
+        <div>
+          <p class="text-sm md:ps-35">Address</p>
+          <p class="md:ps-30 font-bold text-lg">Phnom Penh</p>
         </div>
-        <div class="ms-40">
-          <p class="text-sm ms-7">Working Hours</p>
-          <p class="font-bold">Mon to Fri - 8:00 to 17:00</p>
+        <div>
+          <p class="text-sm md:ps-35">Working Hours</p>
+          <p class="md:ps-25 font-bold text-lg">Mon to Fri - 8:00 to 17:00</p>
         </div>
       </div>
     </div>
