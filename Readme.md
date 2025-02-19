@@ -2,24 +2,22 @@
 
 ## 📜 Agreement
 
-This contract is between **[Your Company]** and **[Salon Name]**, agreeing on the development of a **modern, responsive beauty salon website**.
+This contract is between **[Betasoftware]** and **[Beauty Salon]**, agreeing on the development of a **modern, responsive beauty salon website**.
 
 ## ✨ Features
 
 - 🏠 Home: Stylish intro & high-quality images
-- 💆 Services: List of treatments & pricing
-- 📅 Booking: Online appointment scheduling
+- 💆 Shop: List of treatments & pricing
+- 📅 FAQ: QNA
 - 👩‍🎨 About: Salon details & team
-- ⭐ Testimonials: Customer reviews
+- ⭐ Payment: Customer payway
 - 📸 Gallery: Showcase work
 - 📍 Contact: Location & form
 
 ## 🛠️ Tech Stack
 
-- **Frontend:** HTML, CSS, JS, Bootstrap
-- **Backend:** Node.js, Express.js (if needed)
-- **Database:** MongoDB / MySQL (if needed)
-- **Extras:** jQuery, FontAwesome, Google Maps API
+- **Frontend:** HTML, CSS, JS, Tailwindcss
+- **Extras:** jQuery, FontAwesome,
 
 ## 🚀 Setup
 
@@ -49,5 +47,5 @@ Licensed under **MIT**. Free to use & modify.
 ## 📞 Contact
 
 📧 Email: contact@beautysalon.com  
-📱 Phone: +123-456-7890  
+📱 Phone: +088-456-7890  
 🌐 Website: [www.beautysalon.com](http://www.beautysalon.com)
